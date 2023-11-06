@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Edu TAS Beginner", cursive;
+  background-color: #e6d5d5;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+#quien{
+  color: aqua;
+}
+
+.logo {
+  color: brown;
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-size: 40px;
+  padding: 10px;
+}
+header {
+  background-color: rgba(204, 95, 5, 0.514);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  gap: 2em;
+}
+header nav ul li {
+  color: brown;
+  padding: 10px;
+}
+
+.seccion-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+.seccion-1 img {
+  display: flex;
+  width: 200px;
+  height: 150px;
+}
+.seccion-1 p {
+  font-size: 15px;
+}
+.seccion-2 img {
+  width: 100%;
+}
+/*formulario*/
+.formulario{
+  background-color: rgba(204, 95, 5, 0.514);
+  border: 1px solid brown;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+/*campos del formulario*/
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #e6d5d5;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #e6d5d5;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: rgba(204, 95, 5, 0.514);
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: brown;
+}
+
+
+.form-row button:active {
+  background-color: rgba(204, 95, 5, 0.514)7;
+}
+
+
+footer {
+  background-color: rgba(204, 95, 5, 0.514);
+  width: 100%;
+}
+/*footer*/
+#contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer {
+  display: flex;
+  align-items: center;
+ 
+  padding: 1em;
+
+}
+div {
+  display: block;
+}
+.trabajo_1 img {
+  width: 345px;
+  height: 230px;
+}
+.trabajo_2 img {
+  width: 345px;
+  height: 230px;
+}
+
+.seccion-3 {
+  display: flex;
+  align-items: center;
+}
+.seccion-3 p {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+.trabajo_1 {
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+.trabajo_2 {
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+#check {
+  display: none;
+}
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:none;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  header {
+    background-color: rgba(100, 48, 5, 0.281);
+  }
+  .seccion-1{
+    text-align: center;
+  
+  }
+  .seccion-1 img{
+    margin-bottom: 40px ;
+  }
+  .seccion-3 {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+  .checkbtn {
+    display: block;
+  }
+  header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+  header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header nav ul li a {
+    font-size: 40px;
+    color: grey;
+  }
+  #check:checked ~ .checkbtn{
+    color: #2c3e50;
+  }
+}
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] 
+  .form-row input[type="email"]{
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  
+}

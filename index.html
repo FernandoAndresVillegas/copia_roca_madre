@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roca Madre</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo" id="titulo">Roca Madre</h1>
+        <nav class="navbar">
+          <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li ><a href="#seccion-principal">Quien soy?</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#footer">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="seccion-principal">
+        <section class="seccion-1">
+          <div class="quien-soy">
+            <h2 id="quien">Quien soy?</h2>
+            <p class="parrafo_1">Bienvenidos</p>
+            <p id="parrafo_2">
+              Me presento soy Roca Madre Mujer que desde niña en los pagos de
+              Lavalle entre las viñas jugaba con greda que dejaba el agua de
+              riego. Infancia difícil y la adultez también, estuve muy ocupada
+              criando 5 hijos Hoy en día me volví a encontrar con el barro, me
+              encanta, me apasiona, me hace sentir libre. Mi imaginación vuela y
+              siento  <strong> Roca Madre, soy la matriarca, soy la generadora de
+              recuerdos.</strong>
+            </p>
+          </div>
+
+          <div class="quien-img">
+            <img
+              src="img/fotos ceramica lau/foto lau.jpg"
+              alt="imagen-portada"
+            />
+          </div>
+        </section>
+
+        <section class="seccion-2">
+          <img src="img/3391832887_5d9d4d9d52_h.jpg" alt="aconcagua" />
+        </section>
+
+        <section class="seccion-3" id="trabajos">
+          
+          <div class="trabajo_1" >
+            <h3>Hornillos</h3>
+            <img src="img/fotos ceramica lau/IMG_2452.JPG" alt="imagenes de hornillos ceramicos">
+            <p> Estos hornillos fueron elaborados artesanalmete,su proposito es la quema de aceites aromaticos como veran el Hornerito es el ave que atravieza mi obra como una gran fuente de inspiracion</p>
+          </div>
+          <div class="trabajo_2">
+            <h3>Botellas</h3>
+            <img src="img/fotos ceramica lau/IMG_2444.JPG" alt="botellas motivo invernal">
+            <p>Estas botellas llevan un paisaje nocturno invernal pintado a mano y sus tapones son esculpidos,su capacidad es de 500 mililitros cada una</p>
+
+          </div>
+          
+        </section>
+      </main>
+
+      <footer id="contacto">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" id="submit">Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+        </form>
+        <div id="footer">
+          <h3>Contactos</h3>
+          <nav>
+            <ul>
+              <a href=""><li>Instagram</li></a>
+              <a href=""><li>WhatsApp</li></a>
+              <a href=""><li>Email</li></a>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script src="formulario.js"></script>
+  </body>
+</html>
